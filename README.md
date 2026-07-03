@@ -30,31 +30,6 @@ Aplikasi manajemen tugas kelompok berbasis Android, dibuat untuk memudahkan sebu
 - `minSdk`: 26 (Android 8.0)
 - `targetSdk` / `compileSdk`: 35 (Android 15)
 
-## Struktur Proyek
-
-```
-app/src/main/java/id/fahri/projectakhirmoprog/
-├── auth/            # Login & Register
-├── task/            # List, form (tambah/edit), dan detail tugas
-├── ui/              # Dashboard & Profil (fragment)
-├── data/
-│   ├── model/       # Model data: Task, Group, dll.
-│   └── repository/  # Layer akses Firestore (TaskRepository, GroupRepository)
-├── notification/    # Reminder deadline (AlarmManager, BroadcastReceiver)
-└── SplashActivity, MainActivity, SettingsActivity, AppEntry
-```
-
-## Cara Menjalankan Proyek
-
-1. Clone repository ini:
-   ```bash
-   https://github.com/Fahri1535/TaskSquad-App.git
-   ```
-2. Buka project menggunakan **Android Studio** (disarankan versi terbaru).
-3. Tunggu proses Gradle sync selesai (dependency akan otomatis terunduh).
-4. File `google-services.json` sudah disertakan di dalam folder `app/`, sehingga project bisa langsung terhubung ke Firebase tanpa konfigurasi tambahan.
-5. Jalankan aplikasi (Run ▶) ke emulator atau device fisik dengan Android 8.0 (API 26) ke atas.
-
 ## Konfigurasi Firestore
 
 Proyek ini menggunakan beberapa composite index pada koleksi `tasks` (kombinasi `groupId`, `assignedToUid`, `deadline`) agar query penugasan tugas per pengguna berjalan dengan baik. Index sudah dikonfigurasi pada project Firebase terkait; jika project dipindahkan ke akun Firebase lain, index tersebut perlu dibuat ulang melalui menu **Firestore Database → Indexes** di Firebase Console.
