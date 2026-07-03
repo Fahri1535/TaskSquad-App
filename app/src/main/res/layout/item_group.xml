@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    android:background="@drawable/bg_card"
+    android:padding="20dp">
+
+    <!-- Kode grup (join code), ditampilkan di atas nama grup -->
+    <TextView
+        android:id="@+id/tvKodeGrup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Kode: ABC123"
+        android:textColor="@color/accent_start"
+        android:fontFamily="@font/poppins_semibold"
+        android:letterSpacing="0.05"
+        android:textSize="11sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintStart_toEndOf="@id/grupDot"
+        app:layout_constraintEnd_toStartOf="@id/btnSalinKodeGrup"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Tombol salin kode grup, pojok kanan atas card -->
+    <ImageView
+        android:id="@+id/btnSalinKodeGrup"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:padding="6dp"
+        android:src="@drawable/ic_copy"
+        app:tint="@color/status_pending"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Salin kode grup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Warna dot kiri atas sebagai identitas grup -->
+
+    <View
+        android:id="@+id/grupDot"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/bar_status_done"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvNamaGrup" />
+
+    <TextView
+        android:id="@+id/tvNamaGrup"
+        style="@style/Text.Title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:text="Nama Grup"
+        app:layout_constraintEnd_toStartOf="@id/tvJumlahTugas"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/grupDot"
+        app:layout_constraintTop_toBottomOf="@id/tvKodeGrup" />
+
+    <!-- Mini progress bar grup -->
+    <TextView
+        android:id="@+id/tvJumlahTugas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="0 tugas"
+        android:textColor="@color/accent_start"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvNamaGrup" />
+
+    <ProgressBar
+        android:id="@+id/progressGrup"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="0dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="14dp"
+        android:progress="0"
+        android:max="100"
+        android:progressDrawable="@drawable/progress_bar_custom"
+        app:layout_constraintTop_toBottomOf="@id/tvNamaGrup"
+        app:layout_constraintStart_toStartOf="@id/tvNamaGrup"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toBottomOf="@id/progressGrup"
+        app:layout_constraintStart_toStartOf="@id/tvNamaGrup"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/tvProgressGrup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0% selesai"
+            style="@style/Text.Caption" />
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/ic_chevron_right"
+            android:importantForAccessibility="no" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

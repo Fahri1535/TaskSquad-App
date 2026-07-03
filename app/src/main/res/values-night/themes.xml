@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Override khusus mode gelap: status bar pakai ikon/teks putih,
+         karena bg_base gelap. Style lain (Text.*, Button.*, InputField)
+         tidak perlu didefinisikan ulang di sini — hanya warnanya yang
+         beda, dan itu sudah otomatis resolve lewat @color/ ke
+         values-night/colors.xml. -->
+    <style name="Base.Theme.ProjectAkhir" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/accent_start</item>
+        <item name="colorPrimaryVariant">@color/accent_end</item>
+        <item name="colorOnPrimary">@color/text_on_accent</item>
+        <item name="colorSecondary">@color/accent_start</item>
+        <item name="colorSecondaryVariant">@color/accent_end</item>
+        <item name="colorOnSecondary">@color/text_on_accent</item>
+        <item name="android:windowBackground">@color/bg_base</item>
+        <item name="android:statusBarColor">@color/bg_base</item>
+        <item name="android:navigationBarColor">@color/bg_base</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="fontFamily">sans-serif</item>
+    </style>
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Kartu checklist putih, rounded, sedikit dimiringkan untuk kesan dinamis -->
+    <group
+        android:pivotX="54"
+        android:pivotY="54"
+        android:rotation="-6">
+        <path
+            android:pathData="M33,26 h42 a8,8 0 0 1 8,8 v40 a8,8 0 0 1 -8,8 h-42 a8,8 0 0 1 -8,-8 v-40 a8,8 0 0 1 8,-8 z"
+            android:fillColor="#FFFFFF" />
+
+        <!-- Baris list pertama: dot + garis -->
+        <path
+            android:pathData="M40,42 m-3,0 a3,3 0 1 0 6,0 a3,3 0 1 0 -6,0"
+            android:fillColor="#1FAE7A" />
+        <path
+            android:pathData="M49,39.5 h24 a2.5,2.5 0 0 1 0,5 h-24 a2.5,2.5 0 0 1 0,-5 z"
+            android:fillColor="#CDEBDE" />
+
+        <!-- Baris list kedua: dot + garis lebih pendek -->
+        <path
+            android:pathData="M40,56 m-3,0 a3,3 0 1 0 6,0 a3,3 0 1 0 -6,0"
+            android:fillColor="#1FAE7A" />
+        <path
+            android:pathData="M49,53.5 h18 a2.5,2.5 0 0 1 0,5 h-18 a2.5,2.5 0 0 1 0,-5 z"
+            android:fillColor="#CDEBDE" />
+
+        <!-- Baris list ketiga: checkmark besar menggantikan dot, menandakan tugas selesai -->
+        <path
+            android:pathData="M37,68.2 l2.6,2.7 l5.4,-5.6"
+            android:strokeColor="#1FAE7A"
+            android:strokeWidth="3.2"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round"
+            android:fillColor="#00000000" />
+        <path
+            android:pathData="M49,68 h24 a2.5,2.5 0 0 1 0,5 h-24 a2.5,2.5 0 0 1 0,-5 z"
+            android:fillColor="#1FAE7A" />
+    </group>
+</vector>

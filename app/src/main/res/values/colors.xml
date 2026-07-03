@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Tema TERANG (default). Varian gelap ada di values-night/colors.xml
+         dan dipakai otomatis kalau AppCompatDelegate diset ke MODE_NIGHT_YES
+         atau device dalam mode gelap saat mode ikut-sistem aktif. -->
+
+    <!-- Base surfaces -->
+    <color name="bg_base">#F5F6F8</color>
+    <color name="bg_surface">#FFFFFF</color>
+    <color name="bg_surface_alt">#EEF0F3</color>
+    <color name="bg_field">#F0F2F5</color>
+    <color name="stroke_subtle">#DDE1E6</color>
+
+    <!-- Accent: teal/emerald gradient family (sama seperti dark, tetap jadi identitas brand) -->
+    <color name="accent_start">#1FAE7A</color>
+    <color name="accent_end">#17835C</color>
+    <color name="accent_soft">#DFF5EC</color>
+
+    <!-- Status colors -->
+    <color name="status_done">#1FAE7A</color>
+    <color name="status_progress">#C97A0E</color>
+    <color name="status_pending">#8A909A</color>
+    <color name="status_overdue">#D6455F</color>
+
+    <!-- Text -->
+    <color name="text_primary">#1B1E24</color>
+    <color name="text_secondary">#5C616B</color>
+    <color name="text_disabled">#9BA0A8</color>
+    <color name="text_on_accent">#FFFFFF</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+</resources>
