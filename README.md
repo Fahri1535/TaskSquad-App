@@ -48,7 +48,7 @@ app/src/main/java/id/fahri/projectakhirmoprog/
 
 1. Clone repository ini:
    ```bash
-   git clone https://github.com/USERNAME/REPO.git
+   https://github.com/Fahri1535/TaskSquad-App.git
    ```
 2. Buka project menggunakan **Android Studio** (disarankan versi terbaru).
 3. Tunggu proses Gradle sync selesai (dependency akan otomatis terunduh).
